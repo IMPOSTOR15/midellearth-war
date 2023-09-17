@@ -1,0 +1,14 @@
+.attribute {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.attribute_text {
+    line-height: 1;
+}
+
+.attribute_icon {
+    width: 20px;
+    height: 20px;
+}

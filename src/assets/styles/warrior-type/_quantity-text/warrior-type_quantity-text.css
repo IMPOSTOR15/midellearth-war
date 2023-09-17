@@ -1,0 +1,6 @@
+.warrior-type_quantity-text {
+    display: block;
+    min-width: 50px;
+    width: fit-content;
+    text-align: center;
+}

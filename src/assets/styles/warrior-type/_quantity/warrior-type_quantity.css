@@ -1,0 +1,6 @@
+.warrior-type_quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Игра «Средиземье»</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="battle">
+            <div class="army" id="army1">
+                <h2 class="army_title">Армия 1</h2>
+            </div>
+            <div id="battleInfo" class="battle-info">
+                <div class="battle-info_opponent" id="opponent1"></div>
+                <img class="battle-info_versus-icon" src="<%=require('../src/assets/icons/others/swords_versus.svg')%>" alt="">
+                <div class="battle-info_opponent" id="opponent2"></div>
+            </div>
+            <div class="army" id="army2">
+                <h2 class="army_title">Армия 2</h2>
+            </div>
+        </section>
+        <div class="button-row">
+            <button id="startBattleBtn" class="main-btn" >Атаковать</button>
+            <button id="armySettingsBtn" class="main-btn">Настроить армию</button>
+        </div>
+        <section class="battle-log">
+            <h2 class="battle-log_title">Ход битвы</h2>
+            <div id="battleTurns" class="battle-log_turns"></div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div id="armyCreateModal" class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Собери свою армию</h2>
+            </div>
+            <div class="modal__body">
+                <div id="army1types" class="modal-army">
+                    <h3 class="modal-army__title">Первая армия</h3>
+                    <select class="modal-army__select" name="army1race" id="army1race">
+                        <option value="orc">Орки</option>
+                        <option value="human">Люди</option>
+                    </select>
+                </div>
+                <div id="army2types" class="modal-army">
+                    <h3 class="modal-army__title">Вторая армия</h3>
+                    <select class="modal-army__select" name="army2race" id="army2race">
+                        <option value="orc">Орки</option>
+                        <option value="human">Люди</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <label for="maxWarriors">
+                    <span>Укажите максимальное колличество войнов в армиях: </span>
+                    <input id="maxWarriors" class="number-input" value="10" type="number">
+                </label>
+                <div class="button-row">
+                    <button class="main-btn"  id="fillArmyRandom">Заполнить армии случайным образом</button>
+                    <button class="main-btn"  id="closeModalBtn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+        <div id="batleEndModal" class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Итоги битвы</h2>
+            </div>
+            <div class="modal__body">
+                <div class="win-army">
+                    <h3 class="win-army__title">Победила армия <span id="winArmyNum"></span>!</h3>
+                    <div id="alliveWarriors" class="win-army__warriors"></div>
+                </div>
+                
+            </div>
+            <div class="modal__footer">
+                <button class="main-btn"  id="closeModalBtn">ОК</button>
+            </div>
+        </div>
+    </div>
+    <template id="wariorTypeTemplate">
+        <div class="warrior-type">
+            <img class="warrior-type_icon" src="" alt="пешый воин людей">
+            <div class="warrior-type_info">
+                <h4 class="warrior-type_title"></h4>
+                <div class="warrior-type_atributes">
+                    <div id="strengthAttribute" class="attribute">
+                        <img class="attribute_icon"src="<%=require('../src/assets/icons/attributes/strength.svg')%>" alt="сила">
+                        <span class="attribute_text"></span>
+                    </div>
+                    <div id="armorAttribute" class="attribute">
+                        <img class="attribute_icon"src="<%=require('../src/assets/icons/attributes/armor.svg')%>" alt="сила">
+                        <span class="attribute_text"></span>
+                    </div>
+                    <div id="accuracyAttribute" class="attribute">
+                        <img class="attribute_icon"src="<%=require('../src/assets/icons/attributes/accuracy.svg')%>" alt="сила">
+                        <span class="attribute_text"></span>
+                    </div>
+                    <div id="speedAttribute" class="attribute">
+                        <img class="attribute_icon"src="<%=require('../src/assets/icons/attributes/speed.svg')%>" alt="сила">
+                        <span class="attribute_text"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="warrior-type_quantity">
+                <button id="decreaseWarriorQuantity" class="warrior-type_quantity-btn">-</button>
+                <span class="warrior-type_quantity-text">0</span>
+                <button id="increaseWarriorQuantity" class="warrior-type_quantity-btn">+</button>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+@import url(../styles/normalize.css);
+
+@import url(../styles/UI/UI.css);
+
+@import url(../styles/warrior/warrior.css);
+
+@import url(../styles/warrior-type/warrior-type.css);
+@import url(../styles/warrior-type/_icon/warrior-type_icon.css);
+@import url(../styles/warrior-type/_atributes/warrior-type_atributes.css);
+@import url(../styles/warrior-type/_info/warrior-type_info.css);
+@import url(../styles/warrior-type/_title/warrior-type_title.css);
+@import url(../styles/warrior-type/_checkbox/warrior-type_checkbox.css);
+@import url(../styles/warrior-type/_quantity/warrior-type_quantity.css);
+@import url(../styles/warrior-type/_quantity-text/warrior-type_quantity-text.css);
+
+@import url(../styles/army/army.css);
+
+@import url(../styles/attribute/attribute.css);
+
+@import url(../styles/armor-bar/armor-bar.css);
+
+@import url(../styles/modal/modal.css);
+
+@import url(../styles/battle-info/battle-info.css);
+
+@import url(../styles/atack-effect/atack-effect.css);
+
+@import url(../styles/battle-log/battle-log.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600;700&display=swap');
+body {
+    font-size: 22px;
+    font-family: 'Cormorant Infant', serif;
+    background-image: url(../images/background.png);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-color: #2c2924;
+}
+
+.main {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+.battle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+

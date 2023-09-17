@@ -1,0 +1,121 @@
+.atack-effect_charm {
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+    animation: charming 3s linear infinite;
+}
+
+
+@keyframes charming {
+    0% {
+        transform: translate(-50%, 0px) rotate(0deg); 
+    }
+    20% {
+        transform: translate(-50%, 5px) rotate(72deg);
+    }
+    40% {
+        transform: translate(-50%, -5px) rotate(144deg);
+    }
+    60% {
+        transform: translate(-50%, 0px) rotate(216deg);
+    }
+    80% {
+        transform: translate(-50%, -5px) rotate(288deg);
+    }
+    100% {
+        transform: translate(-50%, 5px) rotate(360deg);
+    }
+}
+
+
+.atack-effect_sword{
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 10%;
+    transform: rotate(-45deg);
+    width: 40px;
+    height: 40px;
+    animation: swording 0.5s ease-in-out infinite;
+}
+
+@keyframes swording {
+    0%{
+        transform: translate(0, 0px) rotate(-45deg); 
+    }
+    80% {
+        transform: translate(0, 0px) rotate(60deg); 
+    }
+    100% {
+        transform: translate(0, 10px) rotate(90deg);
+    }
+}
+
+
+.atack-effect_spear{
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 10%;
+    
+    width: 50px;
+    height: 50px;
+    animation: spearing 0.5s ease-in-out infinite;
+}
+
+@keyframes spearing {
+    0%{
+        transform: translate(-10px, 10px); 
+    }
+    80% {
+        transform: translate(-5px, 5px); 
+    }
+    100% {
+        transform: translate(-10px, 10px);
+    }
+}
+
+
+.atack-effect_arrow{
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation: spearing 0.5s ease-in-out infinite;
+}
+
+@keyframes arrowing {
+    0%{
+        transform: translate(-10px, 10px); 
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.atack-effect_axe {
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation: axing 0.5s ease-in-out infinite;
+}
+
+@keyframes axing {
+    0%{
+        transform: translate(0, 0px) rotate(-45deg); 
+    }
+    80% {
+        transform: translate(0, 0px) rotate(60deg); 
+    }
+    100% {
+        transform: translate(0, 10px) rotate(90deg);
+    }
+}

@@ -1,0 +1,36 @@
+.warrior-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.warrior-type__disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.warrior-type__disabled button {
+    cursor: not-allowed;
+}
+
+.warrior-type_quantity-btn {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    font-size: 30px;
+    line-height: 0.5;
+}
+
+.warrior-type_quantity-btn:hover {
+    border: 2px solid black;
+}
