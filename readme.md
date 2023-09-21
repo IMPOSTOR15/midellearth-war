@@ -22,7 +22,7 @@
 - JavaScript
 
 
-### [Опробовать игру](https://middleearth-war.netlify.app/)
+## [Опробовать игру](https://middleearth-war.netlify.app/)
 
 
 ## Автор
